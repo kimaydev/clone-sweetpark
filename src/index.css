@@ -1,0 +1,16 @@
+@charset "utf-8";
+
+@import "./style/Reset.css";
+@import "./style/Font.css";
+
+html,
+body {
+  font-family: "Pretendard Variable", Pretendard, -apple-system,
+    BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI",
+    "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+
+  min-width: 320px;
+  font-size: 10px;
+  color: #111;
+}

@@ -1,0 +1,26 @@
+/* Pretendard */
+/* font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif; */
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.7/dist/web/static/pretendard-dynamic-subset.css");
+
+/* easmanru */
+@font-face {
+  font-family: "esamanruBold";
+  src: url(../../public/assets/esamanruBold.ttf);
+}
+@font-face {
+  font-family: "esamanruMedium";
+  src: url(../../public/assets/esamanruMedium.ttf);
+}
+@font-face {
+  font-family: "esamanruLight";
+  src: url(../../public/assets/esamanruLight.ttf);
+}
+
+/* yg-jalnan */
+@font-face {
+  font-family: "yg-jalnan";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_four@1.2/JalnanOTF00.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
