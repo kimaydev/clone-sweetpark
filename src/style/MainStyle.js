@@ -2,25 +2,38 @@ import styled from "@emotion/styled";
 import { Color, Size } from "./GlobalStyle";
 
 // 레이아웃
-export const Wrap = styled.div``;
+export const Wrap = styled.div`
+  & div > section {
+    height: 90vh;
+  }
+`;
 export const Inner = styled.div`
   position: relative;
   max-width: 1920px;
-  width: 95%;
+  margin: 0 auto;
+  padding: 0 2%;
+`;
+export const ContentsInner = styled.div`
+  max-width: 1400px;
+  width: 100%;
   margin: 0 auto;
 `;
 
 // 헤더
 export const HeaderWrap = styled.header`
-  position: relative;
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 999;
+  width: 100%;
   height: ${Size.Height};
-  background: ${Color.White};
   &::after {
     content: "";
     position: absolute;
     width: 100%;
     height: 0.05rem;
-    background: ${Color.BorderColor};
+    background: ${Color.BorderColorWhite};
   }
   & > div {
     display: flex;
@@ -67,6 +80,37 @@ export const SitemapWrap = styled.ul`
       border: 0.05rem solid ${Color.Black};
       padding: 13px;
       border-radius: 30px;
+    }
+  }
+`;
+// 비주얼
+export const VisualWrap = styled.section`
+  & > div {
+    position: relative;
+    background: pink;
+    height: 100%;
+    & > a {
+      display: block;
+      & ul {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        & > li {
+        }
+        & > li:nth-of-type(1) {
+          font-family: "esamanruMedium";
+          font-size: 3.2rem;
+        }
+        & > li:nth-of-type(2) {
+          font-family: "yg-jalnan";
+          font-size: 8rem;
+          margin: 15px 0 25px;
+        }
+        & > li:nth-of-type(3) {
+          font-size: 2.2rem;
+          line-height: 1.3;
+        }
+      }
     }
   }
 `;

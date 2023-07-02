@@ -9,14 +9,14 @@ import Notice from "../components/Notice";
 
 const Main = () => {
   return (
-    <>
+    <div>
       <Visual />
       <SweetPark />
       <Vr />
       <Program />
       <Schedule />
       <Notice />
-    </>
+    </div>
   );
 };
 
