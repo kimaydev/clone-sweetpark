@@ -5,15 +5,15 @@
 /* easmanru */
 @font-face {
   font-family: "esamanruBold";
-  src: url(../../public/assets/esamanruBold.ttf);
+  src: url(/public/assets/esamanruBold.ttf);
 }
 @font-face {
   font-family: "esamanruMedium";
-  src: url(../../public/assets/esamanruMedium.ttf);
+  src: url(/public/assets/esamanruMedium.ttf);
 }
 @font-face {
   font-family: "esamanruLight";
-  src: url(../../public/assets/esamanruLight.ttf);
+  src: url(/public/assets/esamanruLight.ttf);
 }
 
 /* yg-jalnan */
