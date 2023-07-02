@@ -91,7 +91,7 @@ export const VisualWrap = styled.section`
     height: 100%;
     & > a {
       display: block;
-      & ul {
+      ul {
         position: absolute;
         top: 50%;
         transform: translateY(-50%);
@@ -110,6 +110,44 @@ export const VisualWrap = styled.section`
           font-size: 2.2rem;
           line-height: 1.3;
         }
+      }
+    }
+  }
+`;
+// 스위트파크
+export const SweetParkWrap = styled.section`
+  display: flex;
+  align-items: center;
+`;
+export const SweetParkContents = styled.div`
+  display: flex;
+  align-items: center;
+  & > ul {
+    margin-right: 40px;
+    & > li:nth-of-type(1) {
+      font-family: "esamanruMedium";
+      font-size: 2.6rem;
+    }
+    & > li:nth-of-type(2) {
+      font-family: "yg-jalnan";
+      font-size: 5.2rem;
+      margin: 15px 0 25px;
+      line-height: 1.3;
+    }
+    & > li:nth-of-type(3) {
+      font-size: 2.2rem;
+      line-height: 1.3;
+    }
+    & > li:nth-of-type(4) {
+      a {
+        font-family: "esamanruMedium";
+        font-size: 1.7rem;
+        display: inline-block;
+        padding: 20px;
+        border: 0.05rem solid ${Color.Pink};
+        color: ${Color.Pink};
+        margin-top: 40px;
+        border-radius: 40px;
       }
     }
   }
