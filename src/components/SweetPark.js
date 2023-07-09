@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRightLong } from "@fortawesome/free-solid-svg-icons";
@@ -7,7 +6,9 @@ import { faArrowRightLong } from "@fortawesome/free-solid-svg-icons";
 import {
   ContentsInner,
   Inner,
-  SweetParkBtn,
+  LinkBtn,
+  SectionSubTitle,
+  SectionTitle,
   SweetParkContents,
   SweetParkWrap,
 } from "../style/MainStyle";
@@ -19,8 +20,14 @@ const SweetPark = () => {
         <ContentsInner>
           <SweetParkContents>
             <ul>
-              <li>맛있는 먹거리로 가득한 달콤한 공원!</li>
-              <li>스위트파크(SweetPark)</li>
+              <li>
+                <SectionSubTitle>
+                  맛있는 먹거리로 가득한 달콤한 공원!
+                </SectionSubTitle>
+              </li>
+              <li>
+                <SectionTitle>스위트파크(SweetPark)</SectionTitle>
+              </li>
               <li>
                 스위트파크(SweetPark)는 롯데어린이식품체험관으로,
                 <br />
@@ -30,12 +37,12 @@ const SweetPark = () => {
                 edutainment 공간입니다.
               </li>
               <li>
-                <SweetParkBtn to="/">
+                <LinkBtn to="/">
                   스위트파크란?
                   <i>
                     <FontAwesomeIcon icon={faArrowRightLong} />
                   </i>
-                </SweetParkBtn>
+                </LinkBtn>
               </li>
             </ul>
             <div>

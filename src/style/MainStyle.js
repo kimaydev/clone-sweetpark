@@ -4,11 +4,7 @@ import styled from "@emotion/styled";
 import { Color, Size } from "./GlobalStyle";
 
 // 레이아웃
-export const Wrap = styled.div`
-  & div > section {
-    height: 90vh;
-  }
-`;
+export const Wrap = styled.div``;
 export const Inner = styled.div`
   position: relative;
   max-width: 1920px;
@@ -19,6 +15,41 @@ export const ContentsInner = styled.div`
   max-width: 1400px;
   width: 100%;
   margin: 0 auto;
+`;
+// 섹션제목
+export const SectionTitle = styled.h2`
+  font-family: "yg-jalnan";
+  font-size: 5.2rem;
+  line-height: 1.3;
+  margin: 15px 0 25px;
+`;
+// 섹션부제목
+export const SectionSubTitle = styled.h3`
+  font-family: "esamanruMedium";
+  font-size: 2.6rem;
+`;
+// 링크버튼
+export const LinkBtn = styled(Link)`
+  display: inline-block;
+  font-family: "esamanruMedium";
+  font-size: 1.7rem;
+  padding: 15px 25px;
+  margin-top: 40px;
+  border: 0.05rem solid ${Color.Pink};
+  color: ${Color.Pink};
+  border-radius: 40px;
+  transition: 0.2s ease-in-out;
+  min-width: 190px;
+  box-sizing: border-box;
+  text-align: center;
+  & > i {
+    margin-left: 10px;
+    vertical-align: -1px;
+  }
+  &:hover {
+    background: ${Color.Pink};
+    color: ${Color.White};
+  }
 `;
 
 // 헤더
@@ -87,6 +118,7 @@ export const SitemapWrap = styled.ul`
 `;
 // 비주얼
 export const VisualWrap = styled.section`
+  height: 90vh;
   & > div {
     position: relative;
     background: pink;
@@ -99,14 +131,12 @@ export const VisualWrap = styled.section`
         transform: translateY(-50%);
         & > li {
         }
-        & > li:nth-of-type(1) {
-          font-family: "esamanruMedium";
-          font-size: 3.2rem;
-        }
-        & > li:nth-of-type(2) {
-          font-family: "yg-jalnan";
+        & > li h2 {
           font-size: 8rem;
-          margin: 15px 0 25px;
+          line-height: 1;
+        }
+        & > li h3 {
+          font-size: 3.2rem;
         }
         & > li:nth-of-type(3) {
           font-size: 2.2rem;
@@ -120,22 +150,13 @@ export const VisualWrap = styled.section`
 export const SweetParkWrap = styled.section`
   display: flex;
   align-items: center;
+  padding: ${Size.SectionPaddingL};
 `;
 export const SweetParkContents = styled.div`
   display: flex;
   align-items: center;
   & > ul {
     margin-right: 40px;
-    & > li:nth-of-type(1) {
-      font-family: "esamanruMedium";
-      font-size: 2.6rem;
-    }
-    & > li:nth-of-type(2) {
-      font-family: "yg-jalnan";
-      font-size: 5.2rem;
-      line-height: 1.3;
-      margin: 15px 0 25px;
-    }
     & > li:nth-of-type(3) {
       font-size: 2.2rem;
       line-height: 1.3;
@@ -143,23 +164,44 @@ export const SweetParkContents = styled.div`
     }
   }
 `;
-export const SweetParkBtn = styled(Link)`
-  display: inline-block;
-  font-family: "esamanruMedium";
-  font-size: 1.7rem;
-  padding: 15px 25px;
-  border: 0.05rem solid ${Color.Pink};
-  color: ${Color.Pink};
-  margin-top: 40px;
-  border-radius: 40px;
-  transition: 0.2s ease-in-out;
-  & > i {
-    margin-left: 10px;
-    vertical-align: -1px;
+// VR
+export const VrWrap = styled.section`
+  /* 배경색상 추후 백그라운드이미지로 변경 */
+  background: #ffe84c;
+  padding: ${Size.SectionPaddingM};
+`;
+export const VrContents = styled.div`
+  position: relative;
+  &::after {
+    content: "";
+    position: absolute;
+    width: 600px;
+    height: 191px;
+    background: url("https://via.placeholder.com/600x191") no-repeat center;
+    background-size: contain;
+    bottom: -40px;
+    right: 0;
   }
-  &:hover {
-    background: ${Color.Pink};
-    color: ${Color.White};
+  ul {
+    position: relative;
+    z-index: 1;
+    li {
+      h2 {
+        font-size: 4.4rem;
+        color: ${Color.Blue};
+        margin-bottom: 0;
+      }
+      a {
+        background: ${Color.White};
+        border-color: ${Color.White};
+        color: ${Color.Blue};
+        &:hover {
+          background: ${Color.Blue};
+          border-color: ${Color.Blue};
+          color: ${Color.White};
+        }
+      }
+    }
   }
 `;
 
