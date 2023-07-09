@@ -1,9 +1,13 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowRightLong } from "@fortawesome/free-solid-svg-icons";
+
 import {
   ContentsInner,
   Inner,
+  SweetParkBtn,
   SweetParkContents,
   SweetParkWrap,
 } from "../style/MainStyle";
@@ -26,10 +30,12 @@ const SweetPark = () => {
                 edutainment 공간입니다.
               </li>
               <li>
-                <Link to="/">
+                <SweetParkBtn to="/">
                   스위트파크란?
-                  <i></i>
-                </Link>
+                  <i>
+                    <FontAwesomeIcon icon={faArrowRightLong} />
+                  </i>
+                </SweetParkBtn>
               </li>
             </ul>
             <div>

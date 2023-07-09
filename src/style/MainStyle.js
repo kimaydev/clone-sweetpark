@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 import styled from "@emotion/styled";
 import { Color, Size } from "./GlobalStyle";
 
@@ -131,25 +133,33 @@ export const SweetParkContents = styled.div`
     & > li:nth-of-type(2) {
       font-family: "yg-jalnan";
       font-size: 5.2rem;
-      margin: 15px 0 25px;
       line-height: 1.3;
+      margin: 15px 0 25px;
     }
     & > li:nth-of-type(3) {
       font-size: 2.2rem;
       line-height: 1.3;
+      color: ${Color.Gray};
     }
-    & > li:nth-of-type(4) {
-      a {
-        font-family: "esamanruMedium";
-        font-size: 1.7rem;
-        display: inline-block;
-        padding: 20px;
-        border: 0.05rem solid ${Color.Pink};
-        color: ${Color.Pink};
-        margin-top: 40px;
-        border-radius: 40px;
-      }
-    }
+  }
+`;
+export const SweetParkBtn = styled(Link)`
+  display: inline-block;
+  font-family: "esamanruMedium";
+  font-size: 1.7rem;
+  padding: 15px 25px;
+  border: 0.05rem solid ${Color.Pink};
+  color: ${Color.Pink};
+  margin-top: 40px;
+  border-radius: 40px;
+  transition: 0.2s ease-in-out;
+  & > i {
+    margin-left: 10px;
+    vertical-align: -1px;
+  }
+  &:hover {
+    background: ${Color.Pink};
+    color: ${Color.White};
   }
 `;
 
