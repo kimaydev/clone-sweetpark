@@ -3,8 +3,12 @@ export const Color = {
   Black: "#111",
   Pink: "#f11433",
   Blue: "#3389ff",
-  Gray: "#666",
+  Mint: "#1bd0bb",
+  GrayLight: "#eee",
+  GrayRegular: "#999",
+  GrayBold: "#666",
   BorderColorBlack: "rgba(0,0,0,0.1)",
+  BorderColorBlackTwo: "rgba(0,0,0,0.4)",
   BorderColorWhite: "rgba(255,255,255,0.3)",
 };
 export const Size = {

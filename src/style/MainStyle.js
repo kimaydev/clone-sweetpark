@@ -39,7 +39,8 @@ export const LinkBtn = styled(Link)`
   color: ${Color.Pink};
   border-radius: 40px;
   transition: 0.2s ease-in-out;
-  min-width: 190px;
+  max-width: 190px;
+  width: 100%;
   box-sizing: border-box;
   text-align: center;
   & > i {
@@ -160,7 +161,7 @@ export const SweetParkContents = styled.div`
     & > li:nth-of-type(3) {
       font-size: 2.2rem;
       line-height: 1.3;
-      color: ${Color.Gray};
+      color: ${Color.GrayBold};
     }
   }
 `;
@@ -204,5 +205,96 @@ export const VrContents = styled.div`
     }
   }
 `;
-
+// 프로그램
+export const ProgramWrap = styled.section`
+  padding: ${Size.SectionPaddingL};
+`;
+export const ProgramContents = styled.div`
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  h2 {
+    margin: 0;
+    margin-bottom: 15px;
+  }
+  h3 {
+    font-family: "esamanruLight";
+    line-height: 1.5;
+    margin-bottom: 60px;
+  }
+  & > ul {
+    margin-top: 20px;
+    margin-right: 40px;
+    li:nth-of-type(3) {
+      a {
+        display: block;
+        max-width: 170px;
+        margin: 15px 0;
+        &:nth-of-type(1) {
+          background: ${Color.Mint};
+          border-color: ${Color.Mint};
+          color: ${Color.White};
+        }
+        &:nth-of-type(2) {
+          background: ${Color.GrayLight};
+          border-color: ${Color.GrayLight};
+          color: ${Color.GrayRegular};
+          &:hover {
+            color: ${Color.Mint};
+          }
+        }
+      }
+    }
+  }
+  & > div {
+    position: relative;
+    border-radius: 30px;
+    overflow: hidden;
+    isolation: isolate;
+  }
+`;
+export const ProgramImg = styled.div``;
+export const ProgramTxt = styled.div`
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: ${Color.BorderColorBlackTwo};
+  & > ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: ${Color.White};
+    padding: 50px;
+    li {
+      h4 {
+        font-family: "yg-jalnan";
+        font-size: 2.6rem;
+        margin-bottom: 15px;
+      }
+      p {
+        font-size: 1.8rem;
+        line-height: 1.5;
+      }
+      a {
+        margin-top: 0;
+        background: ${Color.White};
+        border-color: ${Color.White};
+        color: ${Color.Black};
+        &:hover {
+          background: ${Color.Black};
+          border-color: ${Color.Black};
+          color: ${Color.White};
+        }
+      }
+      &:nth-of-type(1) {
+        width: calc(100% - 240px);
+        margin-right: 40px;
+      }
+      &:nth-of-type(2) {
+        width: 200px;
+      }
+    }
+  }
+`;
 // 푸터
